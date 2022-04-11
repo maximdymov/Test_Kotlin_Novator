@@ -55,7 +55,7 @@
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="DataAccess.cs" />
-    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\IModel.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
