@@ -13,7 +13,7 @@
         }
 
         private static bool CustomerNameCheck(string name) => (name.Length <= 100 && name != "");
-        private static bool InnCheck(string inn) => inn.Length == 12 && inn != "" && long.TryParse(inn, out long res);
+        private static bool InnCheck(string inn) => inn.Length == 12 && inn != "" && long.TryParse(inn, out _);
         private static bool AddressCheck(string address) => address.Length <= 255;
 
         private static bool AccountNameCheck(string name)
@@ -28,8 +28,8 @@
         }
 
         private static bool AccountCheck(string account) => account.Length == 20 && account != "" 
-                                                        && decimal.TryParse(account, out decimal res);
-        private static bool BikCheck(string bik) => bik.Length == 9 && bik != "" && int.TryParse(bik, out int res);
-        private static bool BalanceCheck(string balance) => balance != "" && decimal.TryParse(balance, out decimal res);
+                                                        && decimal.TryParse(account, out _);
+        private static bool BikCheck(string bik) => bik.Length == 9 && bik != "" && int.TryParse(bik, out _);
+        private static bool BalanceCheck(string balance) => balance != "" && decimal.TryParse(balance, out _);
     }
 }

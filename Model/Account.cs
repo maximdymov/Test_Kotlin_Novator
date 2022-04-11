@@ -8,12 +8,12 @@
         public int BIK { get; private set; }
         public decimal Balance { get; private set; }
 
-        public Account() : base()
+        public Account()
         {
 
         }
 
-        public override void SetParameters(string[] dataRow)
+        public void SetParameters(string[] dataRow)
         {
             Id = int.Parse(dataRow[0]);
             account = decimal.Parse(dataRow[1]);

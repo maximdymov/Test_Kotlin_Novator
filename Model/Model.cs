@@ -7,16 +7,8 @@ using System.Threading.Tasks;
 
 namespace Test_Kotlin_Novator.Model
 {
-    class IModel
+    interface IModel
     {
-        public IModel()
-        {
-
-        }
-
-        public virtual void SetParameters(string[] dataRow)
-        {
-
-        }
+        void SetParameters(string[] dataRow);
     }
 }

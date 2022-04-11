@@ -7,12 +7,12 @@
         public long INN { get; private set; }
         public string Address { get; private set; }
 
-        public Customer() : base()
+        public Customer()
         {
 
         }
 
-        public override void SetParameters(string[] dataRow)
+        public void SetParameters(string[] dataRow)
         {
             Id = int.Parse(dataRow[0]);
             Name = dataRow[1];
